@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(155, 87, 87);
+    gap: 50px;
+    font-family:  'Tilt Warp', cursive;
+}
+
+.container--one{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(155, 87, 87);
+    background-image: url("./assets/2040.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    gap: 100px;
+}
+
+ .game--item{
+    list-style: none;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    }
+
+
+
+.game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    gap: 0.4px;
+    background-color: rgb(90, 255, 8);
+    border-radius: 25px;
+    font-size: 42px;
+}
+
+.rang1{
+    background-color: green;
+}
+
+.rang2{
+    background-color: red;
+}
+
+.rang3{
+    background-color: orange;
+}
+
+.rang4{
+    background-color: white;
+}
+
+.rang5{
+    background-color: yellow;
+}
+
+.rang6{
+    background-color: yellowgreen;
+}
+
+.rang7{
+    background-color: slateblue;
+}
+
+.rang8{
+    background-color: royalblue;
+}
+
+.rang9{
+    background-color: aqua;
+}
+
+.playerOne, .playerTwo{
+    display: flex;
+    width: 220px;
+    height: 220px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+h1{
+    font-size: 38px;
+}
+
+.button--items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--items button{
+   width: 180px;
+   height: 40px;
+   border: none;
+   border-radius: 10px;
+   background-color: blue;
+   color: azure;
+   font-size: 24px;
+   font-weight: 800;
+}
+
+.button--items button:hover{
+    border: solid 3px red;
+}
+
+
+/* @media only screen and (min-width: 600px) {
+    .container {
+      gap: 10px;
+    }
+    .game{
+        width: 60px;
+        height: 60px;
+    }
+
+    .playerOne, .playerTwo{
+        width: 30%;
+    }
+   
+  } */
+
+  .natija{
+    display: none;
+  }
+
+  .game--result{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 0.4px;
+    background-color: rgb(90, 255, 8);
+    border-radius: 25px;
+    font-size: 42px;
+  }
+
+  .button--items h1{
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+    width: 100%;
+    height: 50px;
+    font-size: 36px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal--menu{
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    right: 230px;
+    top: 100px;
+    z-index: 5;
+    background-color: rgb(146, 214, 94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 50px;
+    display: none;
+  }
+
+  .overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(21, 21, 64, 0.603);
+    display: none;
+  }
+
+  .player1, .player2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .player1-result, .player2-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(251, 222, 0);
+    font-size: 48px;
+    color: blue;
+  }
+
+  .hidden{
+    display: flex;
+  }
+
+  .close--modal{
+    display: none;
+  }
+
+  .close--btn{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 1266px;
+    top: 100px;
+    border-radius: 0 10px 0 0;
+    z-index: 6;
+    border: none;
+    background-color: yellow;
+  }
+
+  .winner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-image: url(""); */
+  }
